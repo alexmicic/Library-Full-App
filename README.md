@@ -11,10 +11,12 @@ This is an application that uses MEAN stack which stands for:
 * Express.js
 * Angular.js (1.x)
 * Node.js
+
 Project also involves technologies and tools like:
 * Angular Material
 * SASS/LESS
 * Gulp
+
 Frontend (Angular) was written using https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md style guide.
 
 ## Starting the application
