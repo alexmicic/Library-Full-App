@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Library full stack application</title>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Angular Material -->
+    <link rel="stylesheet" type="text/css" href="/angular-material/angular-material.min.css" />
+
+    <!-- Main css -->
+    <link rel="stylesheet" type="text/css" href="/public/css/main.css" />
+</head>
+<body ng-app="Library" ng-cloak="" layout="column">
+
+    <md-toolbar class="md-padding">
+        <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
+            <md-nav-item md-nav-href="/" name="Books">Books</md-nav-item>
+            <md-nav-item md-nav-href="/login" name="Login">Login</md-nav-item>
+            <!--<md-nav-item md-nav-href="/profile" name="Profile">Profile</md-nav-item>-->
+        </md-nav-bar>
+    </md-toolbar>
+
+    <md-content class="md-padding container">
+        <div ng-view></div>
+    </md-content>
+
+    <!-- AngularJS -->
+    <script src="/angular/angular.min.js"></script>
+    <script src="/angular-route/angular-route.min.js"></script>
+
+    <!-- AngularJS modules required for Angular Material -->
+    <script src="/angular-animate/angular-animate.min.js"></script>
+    <script src="/angular-aria/angular-aria.min.js"></script>
+    <script src="/angular-messages/angular-messages.min.js"></script>
+
+    <!-- Angular Material -->
+    <script src="/angular-material/angular-material.min.js"></script>
+
+    <!-- Main scripts -->
+    <script src="/app.module.js"></script>
+    <script src="/app.routes.js"></script>
+    <script src="/app.factory.js"></script>
+    <script src="/components/books/factory/books.factory.js"></script>
+    <script src="/components/books/controller/books.controller.js"></script>
+</body>
+</html>

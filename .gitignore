@@ -45,3 +45,10 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Directories to igonore
+node_modules
+dist
+.tmp
+.sass-cache
+bower_components
