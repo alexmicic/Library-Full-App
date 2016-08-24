@@ -11,26 +11,28 @@
         .module('Services', []);
 
     angular
-        .module('Book', [
-            'Services'
-        ]);
+        .module('Book', []);
 
     angular
         .module('User', []);
 
     angular
-        .module('Routes', [
-            'ngRoute'
-        ]);
+        .module('Routes', []);
 
     angular
         .module('Library', [
+            /* Core */
+            'ui.router',
+            'ngMaterial',
+
+            /* Services */
+            'Services',
+
+            /* Main */
             'Authentication',
             'Book',
             'User',
-            'Routes',
-            'ngRoute',
-            'ngMaterial'
+            'Routes'
         ]);
 
 })();

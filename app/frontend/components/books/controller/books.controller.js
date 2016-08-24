@@ -16,6 +16,7 @@
         var vm = this;
 
         vm.addBook = addBook;
+        vm.book = {};
         vm.books = [];
         vm.title = 'Our Books';
         
@@ -32,15 +33,15 @@
         function addBook() {
             // TODO: handles click event
             // For now just add test book to the db
-            var book = {
+            /*vm.book = {
                 title: "Gratitude",
                 author: "Oliver Sacks",
                 genre: "Memoir"
             };
 
-            BooksFactory.addBook(book, function (response) {
+            BooksFactory.addBook(vm.book, function (response) {
                 console.log('Book added')
-            });
+            });*/
         }
 
     };

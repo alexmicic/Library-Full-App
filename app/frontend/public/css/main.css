@@ -28,3 +28,7 @@ h3 {
 
 h4 {
   font-size: 1em; }
+
+.listdemoBasicUsage md-divider {
+  margin-top: 10px;
+  margin-bottom: 0; }

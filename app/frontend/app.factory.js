@@ -22,7 +22,7 @@
         //////////////
 
         function apiRequest(method, url, data, callback) {
-            $http({
+            return $http({
                 method: method,
                 url: url,
                 data: data

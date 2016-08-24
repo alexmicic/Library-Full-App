@@ -5,20 +5,19 @@
         .module('Routes')
         .config(config);
 
-    config.$inject = ['$routeProvider', '$locationProvider'];
+    config.$inject = ['$stateProvider', '$urlRouterProvider'];
 
-    function config($routeProvider, $locationProvider) {
-        $routeProvider
+    function config($stateProvider, $urlRouterProvider) {
+        $stateProvider
             // books page
-            .when('/', {
+            .state('home', {
+                url: '/',
                 templateUrl: 'components/books/views/books.html',
                 controller: 'BooksController',
                 controllerAs: 'vm'
             })
 
-            .otherwise({ redirectTo: '/' });
-
-        $locationProvider.html5Mode({ enabled: true, requireBase: false });
+        $urlRouterProvider.otherwise('/');
     };
 
 })();
